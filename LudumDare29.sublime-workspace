@@ -1,0 +1,957 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"in",
+				"intRanged(...)	Int"
+			],
+			[
+				"temp",
+				"tempPosVector	var"
+			],
+			[
+				"floa",
+				"floatRanged(...)	Float"
+			],
+			[
+				"game",
+				"gameState	flixel.FlxState"
+			],
+			[
+				"getf",
+				"getFirstDead()	HammerShark"
+			],
+			[
+				"hamm",
+				"HAMMERSHARKS_MIN_SPEED	Int"
+			],
+			[
+				"HAMM",
+				"HAMMERSHARKS_INITIAL_SPEED	Int"
+			],
+			[
+				"BO",
+				"Bool	class"
+			],
+			[
+				"get",
+				"getWorldPosition(...)	flixel.util.FlxPoint"
+			],
+			[
+				"an",
+				"angleBetweenMouse(...)	Float"
+			],
+			[
+				"FlxT",
+				"FlxTypedGroup	class"
+			],
+			[
+				"R",
+				"ROYAL_BLUE	Int"
+			],
+			[
+				"A",
+				"AQUAMARINE	Int"
+			],
+			[
+				"FlxC",
+				"FlxColor	class"
+			],
+			[
+				"Power",
+				"powerUpTimerTimeValue	var"
+			],
+			[
+				"shake",
+				"shakeTimer	var"
+			],
+			[
+				"inT",
+				"Int	class"
+			],
+			[
+				"BIT",
+				"BitmapData	flash.display"
+			],
+			[
+				"elaps",
+				"elapsedTime	Float"
+			],
+			[
+				"Flx",
+				"FlxParticle"
+			],
+			[
+				"iNT",
+				"Int"
+			],
+			[
+				"process",
+				"processedPath	var"
+			],
+			[
+				"State",
+				"StateMachine	StateMachine"
+			],
+			[
+				"debu",
+				"DebuggerFrontEnd	flixel.system.frontEnds"
+			],
+			[
+				"jus",
+				"justStarted(...)	Array<flixel.input.touch.FlxTouch>"
+			],
+			[
+				"GET",
+				"getKeyCode( KeyName : String )	Int"
+			],
+			[
+				"MAX",
+				"maxVelocity"
+			],
+			[
+				"max",
+				"maxVelocityX"
+			],
+			[
+				"turn",
+				"turnAttackTime"
+			],
+			[
+				"jump",
+				"jumpingFlag"
+			],
+			[
+				"acce",
+				"accelerationWalking"
+			],
+			[
+				"accee",
+				"accelerationRunning"
+			],
+			[
+				"grav",
+				"gravitation"
+			],
+			[
+				"angle",
+				"angleTo"
+			],
+			[
+				"dist",
+				"distSQ"
+			],
+			[
+				"par",
+				"particleB"
+			],
+			[
+				"partc",
+				"particleA"
+			],
+			[
+				"sprin",
+				"springLength"
+			],
+			[
+				"sprig",
+				"springPoint"
+			],
+			[
+				"rec",
+				"rect1"
+			],
+			[
+				"clien",
+				"clientX"
+			],
+			[
+				"ran",
+				"rangeIntersect"
+			],
+			[
+				"cir",
+				"circle1"
+			],
+			[
+				"circle",
+				"circle0"
+			],
+			[
+				"DEST",
+				"destMax"
+			],
+			[
+				"dest",
+				"destMin"
+			],
+			[
+				"sou",
+				"sourceMax"
+			],
+			[
+				"set",
+				"setAngle"
+			],
+			[
+				"thrus",
+				"thrusting"
+			],
+			[
+				"gra",
+				"gravity"
+			],
+			[
+				"part",
+				"particles"
+			],
+			[
+				"curre",
+				"currentY"
+			],
+			[
+				"arr",
+				"arrowX"
+			],
+			[
+				"cen",
+				"centerY"
+			],
+			[
+				"current",
+				"currentAnim"
+			],
+			[
+				"ang",
+				"angle"
+			],
+			[
+				"input",
+				"inputTimer"
+			],
+			[
+				"inpu",
+				"inputTimer"
+			],
+			[
+				"inp",
+				"inputTimer"
+			],
+			[
+				"timer",
+				"timerMinThreshold"
+			],
+			[
+				"waiti",
+				"WAITING_ANY"
+			],
+			[
+				"angula",
+				"angularAcceleration"
+			],
+			[
+				"draw",
+				"drawUI"
+			],
+			[
+				"ti",
+				"tick"
+			],
+			[
+				"angu",
+				"angularPosition"
+			],
+			[
+				"angul",
+				"angularAcceleration"
+			],
+			[
+				"Game",
+				"GameManager"
+			],
+			[
+				"handle",
+				"handleGame"
+			],
+			[
+				"dra",
+				"drawUI"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "source/PreyManager.hx",
+			"settings":
+			{
+				"buffer_size": 2042,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Project.xml",
+			"settings":
+			{
+				"buffer_size": 3026,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "source/PlayState.hx",
+			"settings":
+			{
+				"buffer_size": 3546,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/usr/lib/haxe/lib/flixel/3,2,2/flixel/util/FlxColor.hx",
+			"settings":
+			{
+				"buffer_size": 5550,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "source/HammerShark.hx",
+			"settings":
+			{
+				"buffer_size": 5046,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/SharkManager.hx",
+			"settings":
+			{
+				"buffer_size": 1776,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "export/flash/bin/index.html",
+			"settings":
+			{
+				"buffer_size": 830,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 287.0,
+		"selected_items":
+		[
+			[
+				"haxe",
+				"Haxe: Choose Build Target"
+			],
+			[
+				"find",
+				"Find: In Project"
+			],
+			[
+				"prv",
+				"PackageResourceViewer: Extract Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: List Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Packa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 629.0
+	},
+	"console":
+	{
+		"height": 54.0,
+		"history":
+		[
+			"sublime.log_commands(True)",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/davidcolladoochoa/Developer/LudumDare29/source/Prey.hx",
+		"/Users/davidcolladoochoa/Developer/LudumDare29/source/PlayState.hx",
+		"/Users/davidcolladoochoa/Developer/LudumDare29/source/Reg.hx",
+		"/Users/davidcolladoochoa/Developer/LudumDare29/source/Wave.hx",
+		"/Users/davidcolladoochoa/Developer/LudumDare29/source/Rock.hx",
+		"/Users/davidcolladoochoa/Developer/LudumDare29/source/HammerShark.hx",
+		"/Users/davidcolladoochoa/Developer/LudumDare29/Project.xml",
+		"/Users/davidcolladoochoa/Developer/LudumDare29/source/WaveManager.hx",
+		"/Users/davidcolladoochoa/Developer/LudumDare29/source/SharkManager.hx",
+		"/Users/davidcolladoochoa/Developer/LudumDare29/source/Bubble.hx",
+		"/Users/davidcolladoochoa/Developer/LudumDare29/source/GameClass.hx",
+		"/Users/davidcolladoochoa/Developer/haxeFlixelTest/haxeFlixelTest.sublime-project",
+		"/Users/davidcolladoochoa/Developer/haxeFlixelTest/source/GameClass.hx",
+		"/Users/davidcolladoochoa/Developer/haxeFlixelTest/source/Main.hx",
+		"/Users/davidcolladoochoa/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/davidcolladoochoa/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/davidcolladoochoa/Developer/2raptorsand100bullets/source/PlayState.hx",
+		"/Users/davidcolladoochoa/Developer/2raptorsand100bullets/source/Registry.hx",
+		"/Users/davidcolladoochoa/Developer/2raptorsand100bullets/Project.xml",
+		"/Users/davidcolladoochoa/Developer/2raptorsand100bullets/source/UltraWeaponPowerUp.hx",
+		"/Users/davidcolladoochoa/Developer/2raptorsand100bullets/source/Player.hx",
+		"/Users/davidcolladoochoa/Developer/2raptorsand100bullets/source/UltraBullet.hx",
+		"/Users/davidcolladoochoa/Developer/2raptorsand100bullets/source/Frontdrop.hx",
+		"/Users/davidcolladoochoa/Developer/2raptorsand100bullets/source/Fx.hx",
+		"/Users/davidcolladoochoa/Developer/2raptorsand100bullets/source/Jets.hx",
+		"/Users/davidcolladoochoa/Developer/2raptorsand100bullets/source/CircleMarker.hx",
+		"/Users/davidcolladoochoa/Developer/2raptorsand100bullets/source/Weapon.hx",
+		"/Users/davidcolladoochoa/Developer/2raptorsand100bullets/source/Bullet.hx",
+		"/Users/davidcolladoochoa/Developer/2raptorsand100bullets/source/BulletManager.hx",
+		"/Users/davidcolladoochoa/Developer/2raptorsand100bullets/source/ExplosionEmitter.hx",
+		"/Users/davidcolladoochoa/Developer/2raptorsand100bullets/source/BigJets.hx",
+		"/Users/davidcolladoochoa/Developer/2raptorsand100bullets/source/DeathParticle.hx",
+		"/Users/davidcolladoochoa/Developer/2raptorsand100bullets/source/ExplosionEmitter",
+		"/Users/davidcolladoochoa/Developer/2raptorsand100bullets/source/ExplosionParticle.hx",
+		"/Users/davidcolladoochoa/Developer/2raptorsand100bullets/source/ProcedGenMap.hx",
+		"/Users/davidcolladoochoa/Developer/2raptorsand100bullets/source/Leaf.hx",
+		"/Users/davidcolladoochoa/Developer/2raptorsand100bullets/source/ScrollingBackground.hx",
+		"/Users/davidcolladoochoa/Developer/2raptorsand100bullets/source/Backdrop.hx",
+		"/Users/davidcolladoochoa/Developer/2raptorsand100bullets/source/GameClass.hx",
+		"/Users/davidcolladoochoa/Developer/HD_App_Resources/notifications.json",
+		"/Users/davidcolladoochoa/Developer/HD_App_Resources/events.json",
+		"/Users/davidcolladoochoa/Desktop/Tutorials/Haxe/HaxeFlixel_Tutorials/Templates/PlatformerTemplate/assets/data/tiled/secondLevel.tmx",
+		"/Users/davidcolladoochoa/Desktop/Tutorials/Haxe/HaxeFlixel_Tutorials/Templates/PlatformerTemplate/source/MenuState.hx",
+		"/Users/davidcolladoochoa/Desktop/Tutorials/Haxe/HaxeFlixel_Tutorials/Templates/PlatformerTemplate/Project.xml",
+		"/Users/davidcolladoochoa/Desktop/Tutorials/Haxe/HaxeFlixel_Tutorials/Templates/PlatformerTemplate/source/TiledLevel.hx",
+		"/Users/davidcolladoochoa/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/davidcolladoochoa/Desktop/Tutorials/Haxe/HaxeFlixel_Tutorials/KitchenSink/source/StateMachine/EmptyState.hx",
+		"/Users/davidcolladoochoa/Desktop/Tutorials/Haxe/HaxeFlixel_Tutorials/KitchenSink/source/StateMachine/IState.hx",
+		"/Users/davidcolladoochoa/Desktop/Tutorials/Haxe/HaxeFlixel_Tutorials/KitchenSink/source/StateMachine/StateMachine.hx",
+		"/Users/davidcolladoochoa/Desktop/Tutorials/Haxe/HaxeFlixel_Tutorials/KitchenSink/source/StateMachine/StateStack.hx",
+		"/Users/davidcolladoochoa/Desktop/Tutorials/Haxe/HaxeFlixel_Tutorials/KitchenSink/source/EmptyState.hx",
+		"/Users/davidcolladoochoa/Desktop/Tutorials/Haxe/HaxeFlixel_Tutorials/KitchenSink/source/MenuState.hx",
+		"/Users/davidcolladoochoa/Desktop/Tutorials/Haxe/HaxeFlixel_Tutorials/KitchenSink/source/StateMachine.hx",
+		"/Users/davidcolladoochoa/Desktop/Tutorials/Haxe/HaxeFlixel_Tutorials/KitchenSink/source/IState.hx",
+		"/Users/davidcolladoochoa/Desktop/Tutorials/Haxe/HaxeFlixel_Tutorials/KitchenSink/source/StateStack.hx",
+		"/Users/davidcolladoochoa/Developer/RememCar/Podfile",
+		"/Users/davidcolladoochoa/Developer/RememCar_Resources/TestingVersions/TestCases_v0.2.txt",
+		"/Users/davidcolladoochoa/Developer/RememCar_Resources/AppStore/Description.txt",
+		"/Users/davidcolladoochoa/Developer/RememCar_Resources/TestingVersions/TestReport_v0.4.1.txt",
+		"/usr/lib/haxe/lib/flixel-demos/1,0,2/Effects/FlxSpriteFilters/project.xml",
+		"/usr/lib/haxe/lib/flixel-demos/1,0,2/Effects/FlxSpriteFilters/source/Main.hx",
+		"/usr/lib/haxe/lib/flixel-demos/1,0,2/Effects/FlxSpriteFilters/source/FiltersDemo.hx",
+		"/usr/lib/haxe/lib/flixel-demos/1,0,2/Editors/TiledEditor/Project.xml",
+		"/usr/lib/haxe/lib/flixel-addons/1,0,3/flixel/addons/plugin/effects/FlxSpecialFX.hx",
+		"/Users/davidcolladoochoa/Desktop/Tutorials/Haxe/CPPGraphicalTest/DisplayABitmap.hx",
+		"/Users/davidcolladoochoa/Desktop/Tutorials/Haxe/CPPGraphicalTest/package;.hx",
+		"/Users/davidcolladoochoa/Desktop/Tutorials/Haxe/CPPGraphicalTest/build.nmml.xml",
+		"/Users/davidcolladoochoa/Desktop/Tutorials/Haxe/Test/test.hx",
+		"/Users/davidcolladoochoa/Desktop/Tutorials/Haxe/Test/build.hxml",
+		"/Users/davidcolladoochoa/Desktop/Misc/OLD/jpg-glitch-develop/scripts/src/glitch.js",
+		"/Users/davidcolladoochoa/Desktop/Tutorials/CodingMath/Episode1/utils.js",
+		"/Users/davidcolladoochoa/Desktop/Tutorials/CodingMath/Episode1/spring3.js",
+		"/Users/davidcolladoochoa/Desktop/Tutorials/CodingMath/Episode1/gridMovement.js",
+		"/Users/davidcolladoochoa/Desktop/Tutorials/CodingMath/Episode1/friction2.js",
+		"/Users/davidcolladoochoa/Desktop/Tutorials/CodingMath/Episode1/particle.js",
+		"/Users/davidcolladoochoa/Desktop/Tutorials/CodingMath/Episode1/vector.js",
+		"/Users/davidcolladoochoa/Desktop/Tutorials/CodingMath/Episode1/regen.js",
+		"/Users/davidcolladoochoa/Desktop/Tutorials/CodingMath/Episode1/index.html",
+		"/Users/davidcolladoochoa/Desktop/Tutorials/CodingMath/Episode1/miscFunctions.js",
+		"/Users/davidcolladoochoa/Desktop/Tutorials/CodingMath/Episode1/gravityEpisode.js",
+		"/Users/davidcolladoochoa/Desktop/Tutorials/CodingMath/Episode1/arctangent.js",
+		"/Users/davidcolladoochoa/Desktop/Tutorials/CodingMath/Episode1/velocityEpisode.js",
+		"/Users/davidcolladoochoa/Desktop/Tutorials/CodingMath/Episode1/vectorUsage.js",
+		"/Users/davidcolladoochoa/Desktop/Tutorials/CodingMath/Episode1/fireworks.js",
+		"/Users/davidcolladoochoa/Library/Application Support/Sublime Text 3/Packages/DashDoc/Default (OSX).sublime-keymap",
+		"/Users/davidcolladoochoa/Library/Application Support/Sublime Text 3/Packages/DashDoc/DashDoc.sublime-settings",
+		"/Users/davidcolladoochoa/Library/Application Support/Sublime Text 3/Packages/User/DashDoc.sublime-settings",
+		"/Users/davidcolladoochoa/Desktop/Tutorials/CodingMath/Episode1/main.js",
+		"/Users/davidcolladoochoa/Desktop/Tutorials/CodingMath/Episode1/style.css",
+		"/Users/davidcolladoochoa/Desktop/Tutorials/CocoaPods/CocoaUserTest/Podfile",
+		"/Users/davidcolladoochoa/Desktop/Tutorials/CocoaPods/CocoaPodsTest/Podfile",
+		"/Users/davidcolladoochoa/Developer/Surrealism/lib/game/main.js",
+		"/Users/davidcolladoochoa/Developer/Surrealism/lib/game/entities/bullet.js",
+		"/Users/davidcolladoochoa/Developer/Surrealism/lib/game/entities/barrel.js",
+		"/Users/davidcolladoochoa/Developer/elKiwiBarcelonaSite/index.html",
+		"/Users/davidcolladoochoa/Developer/AS/1ShotKill/bin-debug/index.html",
+		"/Users/davidcolladoochoa/Developer/GitHub/KFCocoaPodsPlugin/Podfile.lock",
+		"/Users/davidcolladoochoa/Developer/GitHub/AS3-State-Machine/README.mdown",
+		"/Users/davidcolladoochoa/Developer/AS/Flixel-Power-Tools-test-suite/README.md",
+		"/Users/davidcolladoochoa/Downloads/soundwaveplotting_080926src/src/SoundWavePlotting.as",
+		"/Users/davidcolladoochoa/Desktop/Tip 8/src/PlayState.as",
+		"/Users/davidcolladoochoa/Developer/GitHub/minimalcomps/README.md",
+		"/Users/davidcolladoochoa/Developer/AS/king/bin-debug/weathers.json",
+		"/Users/davidcolladoochoa/Desktop/Tutorials/Javascript/program.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"<open files>,<open folders>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"ROYAL_BLUE",
+			"FlxQuadTree",
+			"Rock",
+			"distance",
+			"HAMMERSHARKS_LINEAR_DRAG",
+			"HAMMERSHARKS_SWIM_LINEAR_SPEED",
+			"FLX_NO_MOUSE_ADVANCED",
+			"loadgraph",
+			"loadgra",
+			"build",
+			"haxe",
+			"jump",
+			"velocity.y",
+			"super+shift+p",
+			"package",
+			"isReadyToJump",
+			"jump",
+			"touch",
+			"touching",
+			"jumpAction",
+			"menuStateVar",
+			"powerUpTimer",
+			"shakeTimer",
+			"pressStartTimer",
+			"shakeOnMenu",
+			"trace",
+			"count",
+			"updatecoun",
+			"countdownTimer",
+			"deadTimer",
+			"bool",
+			"abort",
+			"getfirsta",
+			"loadGraphic",
+			"XboxButtonID",
+			"xbO",
+			"XboxButtonID",
+			"gamepad",
+			"loadGra",
+			"LOADgRA",
+			"loadGraphic",
+			"angle",
+			"updateEaseIndex",
+			"update",
+			"uodate",
+			"trailArea",
+			"filter4",
+			"updateDisplaceFilter",
+			"spr6Filter",
+			"32",
+			"width",
+			"coin",
+			"state",
+			"loadObjects",
+			"loadObject",
+			"_snakeBody",
+			"_thrust",
+			"_player",
+			"velocity",
+			"angle",
+			"moveUp",
+			"generateCaveString",
+			"idle",
+			"parseJson",
+			"complex",
+			"_enemyBullets\n_enemyBullets",
+			"_enemyBullets",
+			"Emitter",
+			"emitterGroup",
+			"FlxAsyncLoop",
+			"loadReplay",
+			"start_play",
+			"moveToGoal",
+			"_findPathButton",
+			"space.gravity.y",
+			"LEVEL_MIN_X",
+			"debugg",
+			"hudCam",
+			"createWalls",
+			"createFloor",
+			"setZoom",
+			"startTween",
+			"isAnimSpr1",
+			"toggleKeys",
+			"accelera",
+			"FlxSpecialFX",
+			"_movementIntervall",
+			"resetTimer",
+			"movesnake",
+			"_headPositions",
+			"offestSprite",
+			"haxe",
+			"elapsed",
+			"Phaser.Physics.NINJA",
+			"ninja",
+			"amoun",
+			";\n",
+			"comment",
+			"mersenneTwisterNumber",
+			"SUPER+MINU",
+			"SUPER+SHIFT+Q",
+			"SUPER+SHIFT+R",
+			"cameraKick",
+			"spawn"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 6,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "source/PreyManager.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2042,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								581,
+								581
+							]
+						],
+						"settings":
+						{
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 468.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Project.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3026,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1333,
+								1333
+							]
+						],
+						"settings":
+						{
+							"haxe-build-id": 0,
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "source/PlayState.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3546,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1457,
+								1467
+							]
+						],
+						"settings":
+						{
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 826.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/usr/lib/haxe/lib/flixel/3,2,2/flixel/util/FlxColor.hx",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 5550,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2239,
+								2249
+							]
+						],
+						"settings":
+						{
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 1485.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "source/HammerShark.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5046,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2590,
+								2590
+							]
+						],
+						"settings":
+						{
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1079.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "source/SharkManager.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1776,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1696,
+								1670
+							]
+						],
+						"settings":
+						{
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 792.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "export/flash/bin/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 830,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								506,
+								506
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 184.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "LudumDare29.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 238.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

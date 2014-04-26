@@ -1,0 +1,16 @@
+-main ApplicationMain 
+-lib flixel
+-lib openfl
+-cp source
+-D FLX_NO_GAMEPAD
+-D tools=1.4.0
+-D FLX_NO_MOUSE_ADVANCED
+-D FLX_NO_TOUCH
+-D web
+-swf-version 11.2
+-swf export/flash/bin/LudumDare29.swf
+-swf-header 960:480:60:000000
+-cp export/flash/haxe
+#--remap nme:flash
+#--no-inline
+-debug
