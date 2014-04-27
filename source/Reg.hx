@@ -32,7 +32,8 @@ class Reg
 	public static inline var SIMPLESHIP_3_IMAGE:String = "assets/images/simple_ship_3.png";
 
 	// Constants
-	public static inline var MAX_HAMMERSHARKS:Int = 50;
+	public static inline var MAX_HAMMERSHARKS:Int = 100;
+	public static inline var INITIAL_SHARKS:Int = 50;
 	public static inline var MAX_WAVES:Int = 50;
 	public static inline var MAX_PREY:Int = 50;
 	public static inline var MAX_TEXTS:Int = 15;
@@ -46,6 +47,7 @@ class Reg
 	public inline static var SHAKE_INTENSITY:Float = 0.008;
 	public inline static var SHAKE_DURATION:Float = 0.1;
 	public inline static var START_COUNTDOWN:Int = 15;
+	public inline static var SOUND_WAVE_DELAY:Float = 0.7;
 
 	public static var LEVEL_WIDTH:Int;
 	public static var LEVEL_HEIGHT:Int;

@@ -200,11 +200,20 @@ class HammerShark extends FlxSprite
 		//if (collidedPrey._collisionsWithShark > 3) {
 			Reg.fx.explodePrey(CollidedShark.x, CollidedShark.y);
 			FlxG.camera.shake(Reg.SHAKE_INTENSITY, Reg.SHAKE_DURATION);
+			switch(CollidedPrey._shipType){
+				case 0:
+				FlxG.sound.play("wreckShip1Effect", 1);
+				case 1:
+				FlxG.sound.play("wreckShip2Effect", 1);
+				case 2:
+				FlxG.sound.play("wreckShip3Effect", 1);
+			}
 			CollidedPrey.kill();
 			var pointsScored:Int = Std.int(100 * CollidedPrey._pointsMultiplier);
 			Reg.score += pointsScored;
 			Reg.scoreMovingTextManager.spawnText(CollidedPrey.x, CollidedPrey.y, pointsScored);
 			Reg.scoreValueText.text = ""+Reg.score;
+			Reg.gameState.spawnSharkFromPlayState();
 		//}
 	}
 

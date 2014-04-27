@@ -19,7 +19,7 @@ class SharkManager extends FlxTypedGroup<HammerShark>
 			add(_oneHammerShark);
 		}
 
-		for (i in 0...maxSize) {
+		for (i in 0...Reg.INITIAL_SHARKS) {
 			spawnShark();
 		}
 	}
@@ -69,6 +69,7 @@ class SharkManager extends FlxTypedGroup<HammerShark>
 			currentShark.exists = true;
 			currentShark.alive = true;
 			currentShark.alpha = 0;
+			currentShark.angle = Reg.sharkLeader.angle;
 			FlxSpriteUtil.fadeIn(currentShark, 0.3);
 		}
 	}

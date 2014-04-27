@@ -14,13 +14,14 @@ class Prey extends FlxSprite
 	public var _pointsMultiplier:Float;
 
 	private var _bubbleEmmiter:FlxEmitter;
+	public var _shipType:Int;
 
 	public function new(X:Float, Y:Float) 
 	{
 		super(X, Y);
 
-		var preyColor:Int = FlxRandom.intRanged(0,2);
-		switch(preyColor){
+		_shipType = FlxRandom.intRanged(0,2);
+		switch(_shipType){
 			case 0:
 			loadGraphic(Reg.SIMPLESHIP_1_IMAGE, false, false, 48, 18, false);
 			case 1:

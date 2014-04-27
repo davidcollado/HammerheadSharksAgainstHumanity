@@ -31,6 +31,22 @@
 	
 	<!--You can use rename="newName" to shorten the paths to individual subdirectories!-->
 	<assets path="assets" />
+
+	<assets path="assets/sounds">
+		<sound path="time_count.wav" id="timeCountEffect" />
+		<sound path="time_count_last_2.wav" id="timeCountLastEffect" />
+		<sound path="time_finale.wav" id="timeFinaleEffect" />
+		<sound path="wreck_ship_1.wav" id="wreckShip1Effect" />
+		<sound path="wreck_ship_2.wav" id="wreckShip2Effect" />
+		<sound path="wreck_ship_3.wav" id="wreckShip3Effect" />
+		<sound path="wave_15.wav" id="wave1Effect" />
+		<sound path="wave_16.wav" id="wave2Effect" />
+		<sound path="wave_17.wav" id="wave3Effect" />
+		<sound path="wave_18.wav" id="wave4Effect" />
+		<sound path="wave_19.wav" id="wave5Effect" />
+		<sound path="wave_20.wav" id="wave6Effect" />
+		<sound path="menu_transition.wav" id="menuTransitionEffect" />
+	</assets>
 	
 	<!--------------------------------LIBRARIES------------------------------------->
 	

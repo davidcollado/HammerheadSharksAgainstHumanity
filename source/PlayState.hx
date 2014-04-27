@@ -17,6 +17,7 @@ import flash.Lib;
 import flixel.util.FlxSave;
 import haxe.Timer;
 import flixel.util.FlxTimer;
+import flixel.system.FlxSound;
 
 /**
  * A FlxState which can be used for the actual gameplay.
@@ -55,6 +56,15 @@ class PlayState extends FlxState
 
 	private var _countdownTimer:FlxTimer;
 
+	private var _waveSound1:FlxSound;
+	private var _waveSound2:FlxSound;
+	private var _waveSound3:FlxSound;
+	private var _waveSound4:FlxSound;
+	private var _waveSound5:FlxSound;
+	private var _waveSound6:FlxSound;
+	private var _playingWave:Bool = false;
+	private var _soundWaveStopTime:Float = 0;
+
 	/**
 	 * Function that is called up when to state is created to set it up. 
 	 */
@@ -62,6 +72,13 @@ class PlayState extends FlxState
 	{
 		// Call to super
 		super.create();
+
+		_waveSound1 = FlxG.sound.load("wave1Effect", 0.1, false, false, false, null, soundWaveEnded);
+		_waveSound2 = FlxG.sound.load("wave2Effect", 0.1, false, false, false, null, soundWaveEnded);
+		_waveSound3 = FlxG.sound.load("wave3Effect", 0.1, false, false, false, null, soundWaveEnded);
+		_waveSound4 = FlxG.sound.load("wave4Effect", 0.1, false, false, false, null, soundWaveEnded);
+		_waveSound5 = FlxG.sound.load("wave5Effect", 0.1, false, false, false, null, soundWaveEnded);
+		_waveSound6 = FlxG.sound.load("wave6Effect", 0.1, false, false, false, null, soundWaveEnded);
 
 		Reg.gameState = this;
 
@@ -178,6 +195,12 @@ class PlayState extends FlxState
 	{
 		super.update();
 
+		if (FlxRandom.float() < 0.5) {
+			//FlxG.log.add("Creating Wave!");
+			_waveGroup.spawnWave();
+			randomlyPlayWaveSound();
+		}
+
 		if (Reg.gameStateVar == 2) {
 			if (FlxG.mouse.visible == true) {
 				FlxG.mouse.visible = false;
@@ -194,11 +217,6 @@ class PlayState extends FlxState
 			// }
 
 			if (FlxRandom.float() < 0.5) {
-				//FlxG.log.add("Creating Wave!");
-				_waveGroup.spawnWave();
-			}
-
-			if (FlxRandom.float() < 0.5) {
 				//FlxG.log.add("Creating Prey!");
 				_preyGroup.spawnPrey();
 			}
@@ -210,6 +228,8 @@ class PlayState extends FlxState
 				_mouseReleasePending = true;
 
 				Reg.gameStateVar = 1;
+				FlxG.sound.play("menuTransitionEffect", 1);
+				Reg.score = 0;
 				FlxSpriteUtil.fadeOut(_startText1, 0.1);
 				FlxSpriteUtil.fadeOut(_startText2, 0.1);
 				FlxSpriteUtil.fadeOut(_pressStartText, 0.1, fadeOutAndInstructions);
@@ -221,6 +241,7 @@ class PlayState extends FlxState
 
 				FlxG.mouse.visible = false;
 				Reg.gameStateVar = 2;
+				FlxG.sound.play("menuTransitionEffect", 1);
 				FlxSpriteUtil.fadeOut(_startText2, 0.1);
 				FlxSpriteUtil.fadeOut(_startText3, 0.1);
 				FlxSpriteUtil.fadeOut(_pressStartText, 0.1);
@@ -244,6 +265,7 @@ class PlayState extends FlxState
 				_mouseReleasePending = true;
 
 				Reg.gameStateVar = 0;
+				FlxG.sound.play("menuTransitionEffect", 1);
 				FlxG.resetState();
 			}
 		}
@@ -353,7 +375,7 @@ class PlayState extends FlxState
 		_startText3.alignment = "center";
 		_startText3.size = 20;
 		_startText3.color = FlxColor.RED;
-		_startText3.text = "LEFT / RIGHT -> Steer the flock of HAMMERHEAD SHARKS";
+		_startText3.text = "LEFT / RIGHT -> Steer the shiver of HAMMERHEAD SHARKS";
 		_startText3.setBorderStyle(FlxText.BORDER_SHADOW);
 		_startText3.scrollFactor.set(0, 0);
 		add(_startText3);
@@ -361,7 +383,7 @@ class PlayState extends FlxState
 		_startText2.alignment = "center";
 		_startText2.size = 30;
 		_startText2.color = FlxColor.WHITE;
-		_startText2.text = "You have "+Reg.START_COUNTDOWN+" seconds to CONTROL the HAMMERHEAD SHARKS!";
+		_startText2.text = "You have "+Reg.START_COUNTDOWN+" seconds!\nWhat are you going to do?";
 		_startText2.setBorderStyle(FlxText.BORDER_SHADOW);
 		_startText2.scrollFactor.set(0, 0);
 		add(_startText2);
@@ -369,7 +391,7 @@ class PlayState extends FlxState
 		_pressStartText.alignment = "center";
 		_pressStartText.size = 35;
 		_pressStartText.color = FlxColor.RED;
-		_pressStartText.text = "WREACK HAVOC!";
+		_pressStartText.text = "Click to WREACK HAVOC!";
 		_pressStartText.setBorderStyle(FlxText.BORDER_SHADOW);
 		_pressStartText.scrollFactor.set(0, 0);
 		FlxSpriteUtil.flicker(_pressStartText, 0, 0.4, false, true);
@@ -400,7 +422,7 @@ class PlayState extends FlxState
 		_startText2.alignment = "center";
 		_startText2.size = 35;
 		_startText2.color =  FlxColor.WHITE;
-		_startText2.text = "Now the HAMMERHEAD SHARKS are free ... \nBENEATH THE SURFACE";
+		_startText2.text = "Now the HAMMERHEAD SHARKS\nare free ... \nBENEATH THE SURFACE";
 		_startText2.setBorderStyle(FlxText.BORDER_SHADOW);
 		_startText2.scrollFactor.set(0, 0);
 		add(_startText2);
@@ -456,6 +478,45 @@ class PlayState extends FlxState
 		_endMenuShown = true;		
 	}
 
+	public function addEndGameInactiveMenu():Void
+	{
+		_startText1 = new FlxText(FlxG.width/2 - 400, FlxG.height/3 - 150, 800);
+		_startText1.alignment = "center";
+		_startText1.size = 40;
+		_startText1.color =  FlxColor.RED;
+		_startText1.text = "HAMMERHEAD SHARKS\nAgainst Humanity";
+		_startText1.setBorderStyle(FlxText.BORDER_SHADOW);
+		_startText1.scrollFactor.set(0, 0);
+		add(_startText1);
+		_startText3 = new FlxText(FlxG.width/2 - 400, FlxG.height/2 - 50, 800);
+		_startText3.alignment = "center";
+		_startText3.size = 27;
+		_startText3.color =  FlxColor.RED;
+		_startText3.text = "Your are NOT helping the HAMMERHEADK SHARKS";
+		_startText3.setBorderStyle(FlxText.BORDER_SHADOW);
+		_startText3.scrollFactor.set(0, 0);
+		add(_startText3);
+		_startText2 = new FlxText(FlxG.width/2 - 400, FlxG.height/2, 800);
+		_startText2.alignment = "center";
+		_startText2.size = 35;
+		_startText2.color =  FlxColor.WHITE;
+		_startText2.text = "When you are ready, go find the HAMMERHEAD SHARKS ... \nBENEATH THE SURFACE";
+		_startText2.setBorderStyle(FlxText.BORDER_SHADOW);
+		_startText2.scrollFactor.set(0, 0);
+		add(_startText2);
+		_pressStartText = new FlxText(FlxG.width/2 - 400, FlxG.height/3 + 275, 800);
+		_pressStartText.alignment = "center";
+		_pressStartText.size = 35;
+		_pressStartText.color =  FlxColor.RED;
+		_pressStartText.text = "Click here";
+		_pressStartText.setBorderStyle(FlxText.BORDER_SHADOW);
+		_pressStartText.scrollFactor.set(0, 0);
+		FlxSpriteUtil.flicker(_pressStartText, 0, 0.4, false, true);
+		add(_pressStartText);
+
+		_endMenuShown = true;		
+	}
+
 	private function fadeOutAndInstructions(TweenInstance: FlxTween):Void
 	{
 		addInstructionsMenu();
@@ -474,6 +535,17 @@ class PlayState extends FlxState
 
 			FlxG.log.add("freeSharksEndGame");
 			addEndGameFreeSharksMenu();
+		}
+		else if (Reg.gameStateVar < 2){
+			// Change Game State
+			Reg.gameStateVar = 3;
+
+			_timerText.visible = false;
+			_scoreLabelText.visible = false;
+			Reg.scoreValueText.visible = false;
+
+			FlxG.log.add("inactiveEndGame");
+			addEndGameInactiveMenu();
 		}
 	}
 
@@ -523,14 +595,59 @@ class PlayState extends FlxState
 
 	public function updateTimer(CurrentTimer:FlxTimer):Void
 	{
-		if (Reg.gameStateVar == 2) {
+		if (Reg.gameStateVar == 2) {			
 			if (_countdownValue == 0) {
 				timeoutEndGame();
+				FlxG.sound.play("timeFinaleEffect", 1);
 			}
 			else {
 				_countdownValue -= 1;
+				if (_countdownValue == 0) {
+					FlxG.sound.play("timeCountLastEffect", 1);
+					_timerText.size = 280;
+				}
+				else if (_countdownValue < 4) {
+					FlxG.sound.play("timeCountLastEffect", 1);
+					_timerText.size = 40 + ((3 / _countdownValue) * 60);
+				}
+				else {
+					FlxG.sound.play("timeCountEffect", 1);
+				}
 				_timerText.text = ""+_countdownValue;
 			}
 		}
+	}
+
+	public function spawnSharkFromPlayState():Void
+	{
+		_hammerSharks.spawnShark();
+	}
+
+	public function randomlyPlayWaveSound():Void
+	{
+		if (_playingWave == false && (Timer.stamp() > (_soundWaveStopTime + Reg.SOUND_WAVE_DELAY))) {
+			_playingWave = true;
+			var waveType = FlxRandom.intRanged(0,5);
+			switch(waveType){
+				case 0:
+				_waveSound1.play();
+				case 1:
+				_waveSound2.play();
+				case 2:
+				_waveSound3.play();
+				case 3:
+				_waveSound4.play();
+				case 4:
+				_waveSound5.play();
+				case 5:
+				_waveSound6.play();
+			}
+		}
+	}
+
+	public function soundWaveEnded():Void
+	{
+		_playingWave = false;
+		_soundWaveStopTime = Timer.stamp();
 	}
 }

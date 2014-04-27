@@ -190,8 +190,92 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/index.html", Reflect.field (AssetType, "text".toUpperCase ()));
 		className.set ("assets/music/music-goes-here.txt", __ASSET__assets_music_music_goes_here_txt);
 		type.set ("assets/music/music-goes-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
+		className.set ("assets/sounds/LudumDare29.cfxr", __ASSET__assets_sounds_ludumdare29_cfxr);
+		type.set ("assets/sounds/LudumDare29.cfxr", Reflect.field (AssetType, "text".toUpperCase ()));
+		className.set ("assets/sounds/menu_transition.wav", __ASSET__assets_sounds_menu_transition_wav);
+		type.set ("assets/sounds/menu_transition.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
 		className.set ("assets/sounds/sounds-go-here.txt", __ASSET__assets_sounds_sounds_go_here_txt);
 		type.set ("assets/sounds/sounds-go-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
+		className.set ("assets/sounds/time_count.wav", __ASSET__assets_sounds_time_count_wav);
+		type.set ("assets/sounds/time_count.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("assets/sounds/time_count_last.wav", __ASSET__assets_sounds_time_count_last_wav);
+		type.set ("assets/sounds/time_count_last.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("assets/sounds/time_count_last_2.wav", __ASSET__assets_sounds_time_count_last_2_wav);
+		type.set ("assets/sounds/time_count_last_2.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("assets/sounds/time_finale.wav", __ASSET__assets_sounds_time_finale_wav);
+		type.set ("assets/sounds/time_finale.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("assets/sounds/wave_1.wav", __ASSET__assets_sounds_wave_1_wav);
+		type.set ("assets/sounds/wave_1.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("assets/sounds/wave_10.wav", __ASSET__assets_sounds_wave_10_wav);
+		type.set ("assets/sounds/wave_10.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("assets/sounds/wave_11.wav", __ASSET__assets_sounds_wave_11_wav);
+		type.set ("assets/sounds/wave_11.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("assets/sounds/wave_12.wav", __ASSET__assets_sounds_wave_12_wav);
+		type.set ("assets/sounds/wave_12.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("assets/sounds/wave_13.wav", __ASSET__assets_sounds_wave_13_wav);
+		type.set ("assets/sounds/wave_13.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("assets/sounds/wave_14.wav", __ASSET__assets_sounds_wave_14_wav);
+		type.set ("assets/sounds/wave_14.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("assets/sounds/wave_15.wav", __ASSET__assets_sounds_wave_15_wav);
+		type.set ("assets/sounds/wave_15.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("assets/sounds/wave_16.wav", __ASSET__assets_sounds_wave_16_wav);
+		type.set ("assets/sounds/wave_16.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("assets/sounds/wave_17.wav", __ASSET__assets_sounds_wave_17_wav);
+		type.set ("assets/sounds/wave_17.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("assets/sounds/wave_18.wav", __ASSET__assets_sounds_wave_18_wav);
+		type.set ("assets/sounds/wave_18.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("assets/sounds/wave_19.wav", __ASSET__assets_sounds_wave_19_wav);
+		type.set ("assets/sounds/wave_19.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("assets/sounds/wave_2.wav", __ASSET__assets_sounds_wave_2_wav);
+		type.set ("assets/sounds/wave_2.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("assets/sounds/wave_20.wav", __ASSET__assets_sounds_wave_20_wav);
+		type.set ("assets/sounds/wave_20.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("assets/sounds/wave_3.wav", __ASSET__assets_sounds_wave_3_wav);
+		type.set ("assets/sounds/wave_3.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("assets/sounds/wave_4.wav", __ASSET__assets_sounds_wave_4_wav);
+		type.set ("assets/sounds/wave_4.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("assets/sounds/wave_5.wav", __ASSET__assets_sounds_wave_5_wav);
+		type.set ("assets/sounds/wave_5.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("assets/sounds/wave_6.wav", __ASSET__assets_sounds_wave_6_wav);
+		type.set ("assets/sounds/wave_6.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("assets/sounds/wave_7.wav", __ASSET__assets_sounds_wave_7_wav);
+		type.set ("assets/sounds/wave_7.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("assets/sounds/wave_8.wav", __ASSET__assets_sounds_wave_8_wav);
+		type.set ("assets/sounds/wave_8.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("assets/sounds/wave_9.wav", __ASSET__assets_sounds_wave_9_wav);
+		type.set ("assets/sounds/wave_9.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("assets/sounds/wreck_ship_1.wav", __ASSET__assets_sounds_wreck_ship_1_wav);
+		type.set ("assets/sounds/wreck_ship_1.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("assets/sounds/wreck_ship_2.wav", __ASSET__assets_sounds_wreck_ship_2_wav);
+		type.set ("assets/sounds/wreck_ship_2.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("assets/sounds/wreck_ship_3.wav", __ASSET__assets_sounds_wreck_ship_3_wav);
+		type.set ("assets/sounds/wreck_ship_3.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("timeCountEffect", __ASSET__assets_sounds_time_count_wav1);
+		type.set ("timeCountEffect", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("timeCountLastEffect", __ASSET__assets_sounds_time_count_last_3);
+		type.set ("timeCountLastEffect", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("timeFinaleEffect", __ASSET__assets_sounds_time_finale_wav1);
+		type.set ("timeFinaleEffect", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("wreckShip1Effect", __ASSET__assets_sounds_wreck_ship_2);
+		type.set ("wreckShip1Effect", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("wreckShip2Effect", __ASSET__assets_sounds_wreck_ship_3);
+		type.set ("wreckShip2Effect", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("wreckShip3Effect", __ASSET__assets_sounds_wreck_ship_4);
+		type.set ("wreckShip3Effect", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("wave1Effect", __ASSET__assets_sounds_wave_16);
+		type.set ("wave1Effect", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("wave2Effect", __ASSET__assets_sounds_wave_17);
+		type.set ("wave2Effect", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("wave3Effect", __ASSET__assets_sounds_wave_18);
+		type.set ("wave3Effect", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("wave4Effect", __ASSET__assets_sounds_wave_19);
+		type.set ("wave4Effect", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("wave5Effect", __ASSET__assets_sounds_wave_20);
+		type.set ("wave5Effect", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("wave6Effect", __ASSET__assets_sounds_wave_21);
+		type.set ("wave6Effect", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("menuTransitionEffect", __ASSET__assets_sounds_menu_transition_wav1);
+		type.set ("menuTransitionEffect", Reflect.field (AssetType, "sound".toUpperCase ()));
 		
 		
 		#elseif html5
@@ -273,7 +357,49 @@ class DefaultAssetLibrary extends AssetLibrary {
 		addExternal("assets/images/wave_spritesheet.pxa/CelData.plist", "text", "assets/images/wave_spritesheet.pxa/CelData.plist");
 		addExternal("assets/index.html", "text", "assets/index.html");
 		addExternal("assets/music/music-goes-here.txt", "text", "assets/music/music-goes-here.txt");
+		addExternal("assets/sounds/LudumDare29.cfxr", "text", "assets/sounds/LudumDare29.cfxr");
+		addExternal("assets/sounds/menu_transition.wav", "sound", "assets/sounds/menu_transition.wav");
 		addExternal("assets/sounds/sounds-go-here.txt", "text", "assets/sounds/sounds-go-here.txt");
+		addExternal("assets/sounds/time_count.wav", "sound", "assets/sounds/time_count.wav");
+		addExternal("assets/sounds/time_count_last.wav", "sound", "assets/sounds/time_count_last.wav");
+		addExternal("assets/sounds/time_count_last_2.wav", "sound", "assets/sounds/time_count_last_2.wav");
+		addExternal("assets/sounds/time_finale.wav", "sound", "assets/sounds/time_finale.wav");
+		addExternal("assets/sounds/wave_1.wav", "sound", "assets/sounds/wave_1.wav");
+		addExternal("assets/sounds/wave_10.wav", "sound", "assets/sounds/wave_10.wav");
+		addExternal("assets/sounds/wave_11.wav", "sound", "assets/sounds/wave_11.wav");
+		addExternal("assets/sounds/wave_12.wav", "sound", "assets/sounds/wave_12.wav");
+		addExternal("assets/sounds/wave_13.wav", "sound", "assets/sounds/wave_13.wav");
+		addExternal("assets/sounds/wave_14.wav", "sound", "assets/sounds/wave_14.wav");
+		addExternal("assets/sounds/wave_15.wav", "sound", "assets/sounds/wave_15.wav");
+		addExternal("assets/sounds/wave_16.wav", "sound", "assets/sounds/wave_16.wav");
+		addExternal("assets/sounds/wave_17.wav", "sound", "assets/sounds/wave_17.wav");
+		addExternal("assets/sounds/wave_18.wav", "sound", "assets/sounds/wave_18.wav");
+		addExternal("assets/sounds/wave_19.wav", "sound", "assets/sounds/wave_19.wav");
+		addExternal("assets/sounds/wave_2.wav", "sound", "assets/sounds/wave_2.wav");
+		addExternal("assets/sounds/wave_20.wav", "sound", "assets/sounds/wave_20.wav");
+		addExternal("assets/sounds/wave_3.wav", "sound", "assets/sounds/wave_3.wav");
+		addExternal("assets/sounds/wave_4.wav", "sound", "assets/sounds/wave_4.wav");
+		addExternal("assets/sounds/wave_5.wav", "sound", "assets/sounds/wave_5.wav");
+		addExternal("assets/sounds/wave_6.wav", "sound", "assets/sounds/wave_6.wav");
+		addExternal("assets/sounds/wave_7.wav", "sound", "assets/sounds/wave_7.wav");
+		addExternal("assets/sounds/wave_8.wav", "sound", "assets/sounds/wave_8.wav");
+		addExternal("assets/sounds/wave_9.wav", "sound", "assets/sounds/wave_9.wav");
+		addExternal("assets/sounds/wreck_ship_1.wav", "sound", "assets/sounds/wreck_ship_1.wav");
+		addExternal("assets/sounds/wreck_ship_2.wav", "sound", "assets/sounds/wreck_ship_2.wav");
+		addExternal("assets/sounds/wreck_ship_3.wav", "sound", "assets/sounds/wreck_ship_3.wav");
+		addExternal("timeCountEffect", "sound", "assets/sounds/time_count.wav");
+		addExternal("timeCountLastEffect", "sound", "assets/sounds/time_count_last_2.wav");
+		addExternal("timeFinaleEffect", "sound", "assets/sounds/time_finale.wav");
+		addExternal("wreckShip1Effect", "sound", "assets/sounds/wreck_ship_1.wav");
+		addExternal("wreckShip2Effect", "sound", "assets/sounds/wreck_ship_2.wav");
+		addExternal("wreckShip3Effect", "sound", "assets/sounds/wreck_ship_3.wav");
+		addExternal("wave1Effect", "sound", "assets/sounds/wave_15.wav");
+		addExternal("wave2Effect", "sound", "assets/sounds/wave_16.wav");
+		addExternal("wave3Effect", "sound", "assets/sounds/wave_17.wav");
+		addExternal("wave4Effect", "sound", "assets/sounds/wave_18.wav");
+		addExternal("wave5Effect", "sound", "assets/sounds/wave_19.wav");
+		addExternal("wave6Effect", "sound", "assets/sounds/wave_20.wav");
+		addExternal("menuTransitionEffect", "sound", "assets/sounds/menu_transition.wav");
 		
 		
 		#else
@@ -513,8 +639,134 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("assets/music/music-goes-here.txt", __ASSET__assets_music_music_goes_here_txt);
 		type.set ("assets/music/music-goes-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
 		
+		className.set ("assets/sounds/LudumDare29.cfxr", __ASSET__assets_sounds_ludumdare29_cfxr);
+		type.set ("assets/sounds/LudumDare29.cfxr", Reflect.field (AssetType, "text".toUpperCase ()));
+		
+		className.set ("assets/sounds/menu_transition.wav", __ASSET__assets_sounds_menu_transition_wav);
+		type.set ("assets/sounds/menu_transition.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
 		className.set ("assets/sounds/sounds-go-here.txt", __ASSET__assets_sounds_sounds_go_here_txt);
 		type.set ("assets/sounds/sounds-go-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
+		
+		className.set ("assets/sounds/time_count.wav", __ASSET__assets_sounds_time_count_wav);
+		type.set ("assets/sounds/time_count.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("assets/sounds/time_count_last.wav", __ASSET__assets_sounds_time_count_last_wav);
+		type.set ("assets/sounds/time_count_last.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("assets/sounds/time_count_last_2.wav", __ASSET__assets_sounds_time_count_last_2_wav);
+		type.set ("assets/sounds/time_count_last_2.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("assets/sounds/time_finale.wav", __ASSET__assets_sounds_time_finale_wav);
+		type.set ("assets/sounds/time_finale.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("assets/sounds/wave_1.wav", __ASSET__assets_sounds_wave_1_wav);
+		type.set ("assets/sounds/wave_1.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("assets/sounds/wave_10.wav", __ASSET__assets_sounds_wave_10_wav);
+		type.set ("assets/sounds/wave_10.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("assets/sounds/wave_11.wav", __ASSET__assets_sounds_wave_11_wav);
+		type.set ("assets/sounds/wave_11.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("assets/sounds/wave_12.wav", __ASSET__assets_sounds_wave_12_wav);
+		type.set ("assets/sounds/wave_12.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("assets/sounds/wave_13.wav", __ASSET__assets_sounds_wave_13_wav);
+		type.set ("assets/sounds/wave_13.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("assets/sounds/wave_14.wav", __ASSET__assets_sounds_wave_14_wav);
+		type.set ("assets/sounds/wave_14.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("assets/sounds/wave_15.wav", __ASSET__assets_sounds_wave_15_wav);
+		type.set ("assets/sounds/wave_15.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("assets/sounds/wave_16.wav", __ASSET__assets_sounds_wave_16_wav);
+		type.set ("assets/sounds/wave_16.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("assets/sounds/wave_17.wav", __ASSET__assets_sounds_wave_17_wav);
+		type.set ("assets/sounds/wave_17.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("assets/sounds/wave_18.wav", __ASSET__assets_sounds_wave_18_wav);
+		type.set ("assets/sounds/wave_18.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("assets/sounds/wave_19.wav", __ASSET__assets_sounds_wave_19_wav);
+		type.set ("assets/sounds/wave_19.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("assets/sounds/wave_2.wav", __ASSET__assets_sounds_wave_2_wav);
+		type.set ("assets/sounds/wave_2.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("assets/sounds/wave_20.wav", __ASSET__assets_sounds_wave_20_wav);
+		type.set ("assets/sounds/wave_20.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("assets/sounds/wave_3.wav", __ASSET__assets_sounds_wave_3_wav);
+		type.set ("assets/sounds/wave_3.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("assets/sounds/wave_4.wav", __ASSET__assets_sounds_wave_4_wav);
+		type.set ("assets/sounds/wave_4.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("assets/sounds/wave_5.wav", __ASSET__assets_sounds_wave_5_wav);
+		type.set ("assets/sounds/wave_5.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("assets/sounds/wave_6.wav", __ASSET__assets_sounds_wave_6_wav);
+		type.set ("assets/sounds/wave_6.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("assets/sounds/wave_7.wav", __ASSET__assets_sounds_wave_7_wav);
+		type.set ("assets/sounds/wave_7.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("assets/sounds/wave_8.wav", __ASSET__assets_sounds_wave_8_wav);
+		type.set ("assets/sounds/wave_8.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("assets/sounds/wave_9.wav", __ASSET__assets_sounds_wave_9_wav);
+		type.set ("assets/sounds/wave_9.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("assets/sounds/wreck_ship_1.wav", __ASSET__assets_sounds_wreck_ship_1_wav);
+		type.set ("assets/sounds/wreck_ship_1.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("assets/sounds/wreck_ship_2.wav", __ASSET__assets_sounds_wreck_ship_2_wav);
+		type.set ("assets/sounds/wreck_ship_2.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("assets/sounds/wreck_ship_3.wav", __ASSET__assets_sounds_wreck_ship_3_wav);
+		type.set ("assets/sounds/wreck_ship_3.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("timeCountEffect", __ASSET__assets_sounds_time_count_wav1);
+		type.set ("timeCountEffect", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("timeCountLastEffect", __ASSET__assets_sounds_time_count_last_3);
+		type.set ("timeCountLastEffect", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("timeFinaleEffect", __ASSET__assets_sounds_time_finale_wav1);
+		type.set ("timeFinaleEffect", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("wreckShip1Effect", __ASSET__assets_sounds_wreck_ship_2);
+		type.set ("wreckShip1Effect", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("wreckShip2Effect", __ASSET__assets_sounds_wreck_ship_3);
+		type.set ("wreckShip2Effect", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("wreckShip3Effect", __ASSET__assets_sounds_wreck_ship_4);
+		type.set ("wreckShip3Effect", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("wave1Effect", __ASSET__assets_sounds_wave_16);
+		type.set ("wave1Effect", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("wave2Effect", __ASSET__assets_sounds_wave_17);
+		type.set ("wave2Effect", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("wave3Effect", __ASSET__assets_sounds_wave_18);
+		type.set ("wave3Effect", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("wave4Effect", __ASSET__assets_sounds_wave_19);
+		type.set ("wave4Effect", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("wave5Effect", __ASSET__assets_sounds_wave_20);
+		type.set ("wave5Effect", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("wave6Effect", __ASSET__assets_sounds_wave_21);
+		type.set ("wave6Effect", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("menuTransitionEffect", __ASSET__assets_sounds_menu_transition_wav1);
+		type.set ("menuTransitionEffect", Reflect.field (AssetType, "sound".toUpperCase ()));
 		
 		
 		#else
@@ -1175,10 +1427,94 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:keep class __ASSET__assets_images_wave_spritesheet_pxa_celdata_plist extends flash.utils.ByteArray { }
 @:keep class __ASSET__assets_index_html extends flash.utils.ByteArray { }
 @:keep class __ASSET__assets_music_music_goes_here_txt extends flash.utils.ByteArray { }
+@:keep class __ASSET__assets_sounds_ludumdare29_cfxr extends flash.utils.ByteArray { }
+@:keep class __ASSET__assets_sounds_menu_transition_wav extends flash.media.Sound { }
 @:keep class __ASSET__assets_sounds_sounds_go_here_txt extends flash.utils.ByteArray { }
+@:keep class __ASSET__assets_sounds_time_count_wav extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_time_count_last_wav extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_time_count_last_2_wav extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_time_finale_wav extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_wave_1_wav extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_wave_10_wav extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_wave_11_wav extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_wave_12_wav extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_wave_13_wav extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_wave_14_wav extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_wave_15_wav extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_wave_16_wav extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_wave_17_wav extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_wave_18_wav extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_wave_19_wav extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_wave_2_wav extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_wave_20_wav extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_wave_3_wav extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_wave_4_wav extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_wave_5_wav extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_wave_6_wav extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_wave_7_wav extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_wave_8_wav extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_wave_9_wav extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_wreck_ship_1_wav extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_wreck_ship_2_wav extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_wreck_ship_3_wav extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_time_count_wav1 extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_time_count_last_3 extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_time_finale_wav1 extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_wreck_ship_2 extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_wreck_ship_3 extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_wreck_ship_4 extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_wave_16 extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_wave_17 extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_wave_18 extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_wave_19 extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_wave_20 extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_wave_21 extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_menu_transition_wav1 extends flash.media.Sound { }
 
 
 #elseif html5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1340,7 +1676,49 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:file("assets/images/wave_spritesheet.pxa/CelData.plist") class __ASSET__assets_images_wave_spritesheet_pxa_celdata_plist extends flash.utils.ByteArray {}
 @:file("assets/index.html") class __ASSET__assets_index_html extends flash.utils.ByteArray {}
 @:file("assets/music/music-goes-here.txt") class __ASSET__assets_music_music_goes_here_txt extends flash.utils.ByteArray {}
+@:file("assets/sounds/LudumDare29.cfxr") class __ASSET__assets_sounds_ludumdare29_cfxr extends flash.utils.ByteArray {}
+@:sound("assets/sounds/menu_transition.wav") class __ASSET__assets_sounds_menu_transition_wav extends flash.media.Sound {}
 @:file("assets/sounds/sounds-go-here.txt") class __ASSET__assets_sounds_sounds_go_here_txt extends flash.utils.ByteArray {}
+@:sound("assets/sounds/time_count.wav") class __ASSET__assets_sounds_time_count_wav extends flash.media.Sound {}
+@:sound("assets/sounds/time_count_last.wav") class __ASSET__assets_sounds_time_count_last_wav extends flash.media.Sound {}
+@:sound("assets/sounds/time_count_last_2.wav") class __ASSET__assets_sounds_time_count_last_2_wav extends flash.media.Sound {}
+@:sound("assets/sounds/time_finale.wav") class __ASSET__assets_sounds_time_finale_wav extends flash.media.Sound {}
+@:sound("assets/sounds/wave_1.wav") class __ASSET__assets_sounds_wave_1_wav extends flash.media.Sound {}
+@:sound("assets/sounds/wave_10.wav") class __ASSET__assets_sounds_wave_10_wav extends flash.media.Sound {}
+@:sound("assets/sounds/wave_11.wav") class __ASSET__assets_sounds_wave_11_wav extends flash.media.Sound {}
+@:sound("assets/sounds/wave_12.wav") class __ASSET__assets_sounds_wave_12_wav extends flash.media.Sound {}
+@:sound("assets/sounds/wave_13.wav") class __ASSET__assets_sounds_wave_13_wav extends flash.media.Sound {}
+@:sound("assets/sounds/wave_14.wav") class __ASSET__assets_sounds_wave_14_wav extends flash.media.Sound {}
+@:sound("assets/sounds/wave_15.wav") class __ASSET__assets_sounds_wave_15_wav extends flash.media.Sound {}
+@:sound("assets/sounds/wave_16.wav") class __ASSET__assets_sounds_wave_16_wav extends flash.media.Sound {}
+@:sound("assets/sounds/wave_17.wav") class __ASSET__assets_sounds_wave_17_wav extends flash.media.Sound {}
+@:sound("assets/sounds/wave_18.wav") class __ASSET__assets_sounds_wave_18_wav extends flash.media.Sound {}
+@:sound("assets/sounds/wave_19.wav") class __ASSET__assets_sounds_wave_19_wav extends flash.media.Sound {}
+@:sound("assets/sounds/wave_2.wav") class __ASSET__assets_sounds_wave_2_wav extends flash.media.Sound {}
+@:sound("assets/sounds/wave_20.wav") class __ASSET__assets_sounds_wave_20_wav extends flash.media.Sound {}
+@:sound("assets/sounds/wave_3.wav") class __ASSET__assets_sounds_wave_3_wav extends flash.media.Sound {}
+@:sound("assets/sounds/wave_4.wav") class __ASSET__assets_sounds_wave_4_wav extends flash.media.Sound {}
+@:sound("assets/sounds/wave_5.wav") class __ASSET__assets_sounds_wave_5_wav extends flash.media.Sound {}
+@:sound("assets/sounds/wave_6.wav") class __ASSET__assets_sounds_wave_6_wav extends flash.media.Sound {}
+@:sound("assets/sounds/wave_7.wav") class __ASSET__assets_sounds_wave_7_wav extends flash.media.Sound {}
+@:sound("assets/sounds/wave_8.wav") class __ASSET__assets_sounds_wave_8_wav extends flash.media.Sound {}
+@:sound("assets/sounds/wave_9.wav") class __ASSET__assets_sounds_wave_9_wav extends flash.media.Sound {}
+@:sound("assets/sounds/wreck_ship_1.wav") class __ASSET__assets_sounds_wreck_ship_1_wav extends flash.media.Sound {}
+@:sound("assets/sounds/wreck_ship_2.wav") class __ASSET__assets_sounds_wreck_ship_2_wav extends flash.media.Sound {}
+@:sound("assets/sounds/wreck_ship_3.wav") class __ASSET__assets_sounds_wreck_ship_3_wav extends flash.media.Sound {}
+@:sound("assets/sounds/time_count.wav") class __ASSET__assets_sounds_time_count_wav1 extends flash.media.Sound {}
+@:sound("assets/sounds/time_count_last_2.wav") class __ASSET__assets_sounds_time_count_last_3 extends flash.media.Sound {}
+@:sound("assets/sounds/time_finale.wav") class __ASSET__assets_sounds_time_finale_wav1 extends flash.media.Sound {}
+@:sound("assets/sounds/wreck_ship_1.wav") class __ASSET__assets_sounds_wreck_ship_2 extends flash.media.Sound {}
+@:sound("assets/sounds/wreck_ship_2.wav") class __ASSET__assets_sounds_wreck_ship_3 extends flash.media.Sound {}
+@:sound("assets/sounds/wreck_ship_3.wav") class __ASSET__assets_sounds_wreck_ship_4 extends flash.media.Sound {}
+@:sound("assets/sounds/wave_15.wav") class __ASSET__assets_sounds_wave_16 extends flash.media.Sound {}
+@:sound("assets/sounds/wave_16.wav") class __ASSET__assets_sounds_wave_17 extends flash.media.Sound {}
+@:sound("assets/sounds/wave_17.wav") class __ASSET__assets_sounds_wave_18 extends flash.media.Sound {}
+@:sound("assets/sounds/wave_18.wav") class __ASSET__assets_sounds_wave_19 extends flash.media.Sound {}
+@:sound("assets/sounds/wave_19.wav") class __ASSET__assets_sounds_wave_20 extends flash.media.Sound {}
+@:sound("assets/sounds/wave_20.wav") class __ASSET__assets_sounds_wave_21 extends flash.media.Sound {}
+@:sound("assets/sounds/menu_transition.wav") class __ASSET__assets_sounds_menu_transition_wav1 extends flash.media.Sound {}
 
 
 #end
