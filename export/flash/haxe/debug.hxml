@@ -5,6 +5,7 @@
 -D FLX_NO_GAMEPAD
 -D tools=1.4.0
 -D FLX_NO_MOUSE_ADVANCED
+-D FLX_NO_DEBUG
 -D FLX_NO_TOUCH
 -D web
 -swf-version 11.2

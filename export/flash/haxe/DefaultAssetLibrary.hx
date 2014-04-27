@@ -40,6 +40,8 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/data/data-goes-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
 		className.set ("assets/images/bubble.png", __ASSET__assets_images_bubble_png);
 		type.set ("assets/images/bubble.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		className.set ("assets/images/ExplosionParticle.png", __ASSET__assets_images_explosionparticle_png);
+		type.set ("assets/images/ExplosionParticle.png", Reflect.field (AssetType, "image".toUpperCase ()));
 		className.set ("assets/images/hammershark.png", __ASSET__assets_images_hammershark_png);
 		type.set ("assets/images/hammershark.png", Reflect.field (AssetType, "image".toUpperCase ()));
 		className.set ("assets/images/hammershark_leader.png", __ASSET__assets_images_hammershark_leader_png);
@@ -172,6 +174,8 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/wave_spritesheet.pxa/5.pxi", Reflect.field (AssetType, "binary".toUpperCase ()));
 		className.set ("assets/images/wave_spritesheet.pxa/CelData.plist", __ASSET__assets_images_wave_spritesheet_pxa_celdata_plist);
 		type.set ("assets/images/wave_spritesheet.pxa/CelData.plist", Reflect.field (AssetType, "text".toUpperCase ()));
+		className.set ("assets/index.html", __ASSET__assets_index_html);
+		type.set ("assets/index.html", Reflect.field (AssetType, "text".toUpperCase ()));
 		className.set ("assets/music/music-goes-here.txt", __ASSET__assets_music_music_goes_here_txt);
 		type.set ("assets/music/music-goes-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
 		className.set ("assets/sounds/sounds-go-here.txt", __ASSET__assets_sounds_sounds_go_here_txt);
@@ -182,6 +186,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		addExternal("assets/data/data-goes-here.txt", "text", "assets/data/data-goes-here.txt");
 		addExternal("assets/images/bubble.png", "image", "assets/images/bubble.png");
+		addExternal("assets/images/ExplosionParticle.png", "image", "assets/images/ExplosionParticle.png");
 		addExternal("assets/images/hammershark.png", "image", "assets/images/hammershark.png");
 		addExternal("assets/images/hammershark_leader.png", "image", "assets/images/hammershark_leader.png");
 		addExternal("assets/images/hammershark_leader_spritesheet.png", "image", "assets/images/hammershark_leader_spritesheet.png");
@@ -248,6 +253,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 		addExternal("assets/images/wave_spritesheet.pxa/4.pxi", "binary", "assets/images/wave_spritesheet.pxa/4.pxi");
 		addExternal("assets/images/wave_spritesheet.pxa/5.pxi", "binary", "assets/images/wave_spritesheet.pxa/5.pxi");
 		addExternal("assets/images/wave_spritesheet.pxa/CelData.plist", "text", "assets/images/wave_spritesheet.pxa/CelData.plist");
+		addExternal("assets/index.html", "text", "assets/index.html");
 		addExternal("assets/music/music-goes-here.txt", "text", "assets/music/music-goes-here.txt");
 		addExternal("assets/sounds/sounds-go-here.txt", "text", "assets/sounds/sounds-go-here.txt");
 		
@@ -263,6 +269,9 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("assets/images/bubble.png", __ASSET__assets_images_bubble_png);
 		type.set ("assets/images/bubble.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		
+		className.set ("assets/images/ExplosionParticle.png", __ASSET__assets_images_explosionparticle_png);
+		type.set ("assets/images/ExplosionParticle.png", Reflect.field (AssetType, "image".toUpperCase ()));
 		
 		className.set ("assets/images/hammershark.png", __ASSET__assets_images_hammershark_png);
 		type.set ("assets/images/hammershark.png", Reflect.field (AssetType, "image".toUpperCase ()));
@@ -461,6 +470,9 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("assets/images/wave_spritesheet.pxa/CelData.plist", __ASSET__assets_images_wave_spritesheet_pxa_celdata_plist);
 		type.set ("assets/images/wave_spritesheet.pxa/CelData.plist", Reflect.field (AssetType, "text".toUpperCase ()));
+		
+		className.set ("assets/index.html", __ASSET__assets_index_html);
+		type.set ("assets/index.html", Reflect.field (AssetType, "text".toUpperCase ()));
 		
 		className.set ("assets/music/music-goes-here.txt", __ASSET__assets_music_music_goes_here_txt);
 		type.set ("assets/music/music-goes-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
@@ -1052,6 +1064,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 @:keep class __ASSET__assets_data_data_goes_here_txt extends flash.utils.ByteArray { }
 @:keep class __ASSET__assets_images_bubble_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_explosionparticle_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep class __ASSET__assets_images_hammershark_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep class __ASSET__assets_images_hammershark_leader_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep class __ASSET__assets_images_hammershark_leader_spritesheet_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
@@ -1118,6 +1131,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:keep class __ASSET__assets_images_wave_spritesheet_pxa_4_pxi extends flash.utils.ByteArray { }
 @:keep class __ASSET__assets_images_wave_spritesheet_pxa_5_pxi extends flash.utils.ByteArray { }
 @:keep class __ASSET__assets_images_wave_spritesheet_pxa_celdata_plist extends flash.utils.ByteArray { }
+@:keep class __ASSET__assets_index_html extends flash.utils.ByteArray { }
 @:keep class __ASSET__assets_music_music_goes_here_txt extends flash.utils.ByteArray { }
 @:keep class __ASSET__assets_sounds_sounds_go_here_txt extends flash.utils.ByteArray { }
 
@@ -1196,11 +1210,14 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
+
+
 #elseif (windows || mac || linux)
 
 
 @:file("assets/data/data-goes-here.txt") class __ASSET__assets_data_data_goes_here_txt extends flash.utils.ByteArray {}
 @:bitmap("assets/images/bubble.png") class __ASSET__assets_images_bubble_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/ExplosionParticle.png") class __ASSET__assets_images_explosionparticle_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/hammershark.png") class __ASSET__assets_images_hammershark_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/hammershark_leader.png") class __ASSET__assets_images_hammershark_leader_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/hammershark_leader_spritesheet.png") class __ASSET__assets_images_hammershark_leader_spritesheet_png extends flash.display.BitmapData {}
@@ -1267,6 +1284,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:file("assets/images/wave_spritesheet.pxa/4.pxi") class __ASSET__assets_images_wave_spritesheet_pxa_4_pxi extends flash.utils.ByteArray {}
 @:file("assets/images/wave_spritesheet.pxa/5.pxi") class __ASSET__assets_images_wave_spritesheet_pxa_5_pxi extends flash.utils.ByteArray {}
 @:file("assets/images/wave_spritesheet.pxa/CelData.plist") class __ASSET__assets_images_wave_spritesheet_pxa_celdata_plist extends flash.utils.ByteArray {}
+@:file("assets/index.html") class __ASSET__assets_index_html extends flash.utils.ByteArray {}
 @:file("assets/music/music-goes-here.txt") class __ASSET__assets_music_music_goes_here_txt extends flash.utils.ByteArray {}
 @:file("assets/sounds/sounds-go-here.txt") class __ASSET__assets_sounds_sounds_go_here_txt extends flash.utils.ByteArray {}
 

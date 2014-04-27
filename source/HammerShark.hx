@@ -56,7 +56,7 @@ class HammerShark extends FlxSprite
 			animation.play("swim");
 		}
 		else {
-			var sharkColor:Int = FlxRandom.intRanged(0,3);
+			var sharkColor:Int = FlxRandom.intRanged(0,4);
 
 			switch(sharkColor){
 				case 0:
@@ -67,6 +67,8 @@ class HammerShark extends FlxSprite
 					loadGraphic(Reg.HAMMERSHARK_SMALL_3_SPRITESHEET, true, false, 32, 8, false);
 				case 3:
 					loadGraphic(Reg.HAMMERSHARK_SMALL_4_SPRITESHEET, true, false, 32, 8, false);
+				case 4:
+					loadGraphic(Reg.HAMMERSHARK_SMALL_LEADER_SPRITESHEET, true, false, 32, 8, false);
 			}
 
 			_lerpValue = FlxRandom.floatRanged(0.5, 0.9);
@@ -174,8 +176,12 @@ class HammerShark extends FlxSprite
 			angularVelocity = myLerp(angularVelocity, Reg.sharkLeader.angularVelocity, 0.9);
 		}
 		else {
-			if (isOnScreen() == false) {
-				FlxSpriteUtil.screenCenter(this);
+			if (Std.int(x) < -200 && Std.int(y) < -200 || Std.int(x) > (Reg.LEVEL_WIDTH + 200) || Std.int(y) > (Reg.LEVEL_HEIGHT + 200)) {
+				// Game Ended - You freed the Sharks
+				if (Reg.gameStateVar != 3) {
+					FlxG.log.add("End Game - FREE");
+					Reg.gameState.freeSharksEndGame();
+				}
 			}
 		}
 	}
@@ -191,7 +197,12 @@ class HammerShark extends FlxSprite
 		//collidedPrey._collisionsWithShark += 1;
 
 		//if (collidedPrey._collisionsWithShark > 3) {
+			Reg.fx.explodePrey(CollidedShark.x, CollidedShark.y);
+			FlxG.camera.shake(Reg.SHAKE_INTENSITY, Reg.SHAKE_DURATION);
 			CollidedPrey.kill();
+			Reg.score += 100;
+			Reg.scoreMovingTextManager.spawnText(CollidedPrey.x, CollidedPrey.y, 100);
+			Reg.scoreValueText.text = ""+Reg.score;
 		//}
 	}
 
