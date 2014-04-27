@@ -129,18 +129,19 @@ class HammerShark extends FlxSprite
 				}
 
 				// Forward - Acceleration
-				if (FlxG.keys.justPressed.UP) {
-					if (_userThrust < Reg.HAMMERSHARKS_MAX_SPEED) {
-						_userThrust += Reg.HAMMERSHARKS_STEP_SPEED;
-					}
-					//FlxG.log.add("_userThrust = "+_userThrust);
-				}
-				if (FlxG.keys.justPressed.DOWN) {
-					if (_userThrust > Reg.HAMMERSHARKS_MIN_SPEED) {
-						_userThrust -= Reg.HAMMERSHARKS_STEP_SPEED;
-					}
-					//FlxG.log.add("_userThrust = "+_userThrust);
-				}
+				// if (FlxG.keys.justPressed.UP) {
+				// 	if (_userThrust < Reg.HAMMERSHARKS_MAX_SPEED) {
+				// 		_userThrust += Reg.HAMMERSHARKS_STEP_SPEED;
+				// 	}
+				// 	//FlxG.log.add("_userThrust = "+_userThrust);
+				// }
+				// if (FlxG.keys.justPressed.DOWN) {
+				// 	if (_userThrust > Reg.HAMMERSHARKS_MIN_SPEED) {
+				// 		_userThrust -= Reg.HAMMERSHARKS_STEP_SPEED;
+				// 	}
+				// 	//FlxG.log.add("_userThrust = "+_userThrust);
+				// }
+				_userThrust = Reg.HAMMERSHARKS_MAX_SPEED;
 			}
 
 			_bakedThrust = FlxVelocity.computeVelocity(_userThrust, _bakedThrust, drag.x, Reg.HAMMERSHARKS_MAX_SPEED);
@@ -176,7 +177,7 @@ class HammerShark extends FlxSprite
 			angularVelocity = myLerp(angularVelocity, Reg.sharkLeader.angularVelocity, 0.9);
 		}
 		else {
-			if (Std.int(x) < -200 && Std.int(y) < -200 || Std.int(x) > (Reg.LEVEL_WIDTH + 200) || Std.int(y) > (Reg.LEVEL_HEIGHT + 200)) {
+			if (Std.int(x) < -200 || Std.int(y) < -200 || Std.int(x) > (Reg.LEVEL_WIDTH + 200) || Std.int(y) > (Reg.LEVEL_HEIGHT + 200)) {
 				// Game Ended - You freed the Sharks
 				if (Reg.gameStateVar != 3) {
 					FlxG.log.add("End Game - FREE");
@@ -200,8 +201,9 @@ class HammerShark extends FlxSprite
 			Reg.fx.explodePrey(CollidedShark.x, CollidedShark.y);
 			FlxG.camera.shake(Reg.SHAKE_INTENSITY, Reg.SHAKE_DURATION);
 			CollidedPrey.kill();
-			Reg.score += 100;
-			Reg.scoreMovingTextManager.spawnText(CollidedPrey.x, CollidedPrey.y, 100);
+			var pointsScored:Int = Std.int(100 * CollidedPrey._pointsMultiplier);
+			Reg.score += pointsScored;
+			Reg.scoreMovingTextManager.spawnText(CollidedPrey.x, CollidedPrey.y, pointsScored);
 			Reg.scoreValueText.text = ""+Reg.score;
 		//}
 	}

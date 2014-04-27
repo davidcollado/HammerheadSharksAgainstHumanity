@@ -10,6 +10,6 @@
 -D web
 -swf-version 11.2
 -swf export/flash/bin/LudumDare29.swf
--swf-header 960:480:60:000000
+-swf-header 960:480:60:084C9E
 -cp export/flash/haxe
 #--remap nme:flash

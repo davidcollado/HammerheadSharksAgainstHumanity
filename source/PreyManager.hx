@@ -28,9 +28,9 @@ class PreyManager extends FlxTypedGroup<Prey>
 		if (getFirstAvailable() != null) {
 			var currentPrey:Prey = getFirstAvailable();
 
-			var sectorX = FlxRandom.intRanged(0,2);
+			var sectorX = FlxRandom.intRanged(0,1);
 
-			var frontBool:Bool = false;
+			// var frontBool:Bool = false;
 			var screenSharkLeader:FlxPoint = Reg.sharkLeader.getScreenXY(FlxG.camera);
 
 			var randomPositionX = FlxRandom.floatRanged(0, 1);
@@ -42,19 +42,19 @@ class PreyManager extends FlxTypedGroup<Prey>
 			else if (sectorX == 1) {
 				currentPrey.x = Reg.sharkLeader.x + (FlxG.camera.width - screenSharkLeader.x) + 10 + RANGE_SPAWNING * randomPositionX;
 			}
-			else {
-				frontBool = true;
-				var extraPositionX = FlxRandom.floatRanged(-1, 1);
-				currentPrey.x = Reg.sharkLeader.x + (FlxG.camera.width * extraPositionX);
-			}
+			// else {
+			// 	frontBool = true;
+			// 	var extraPositionX = FlxRandom.floatRanged(-1, 1);
+			// 	currentPrey.x = Reg.sharkLeader.x + (FlxG.camera.width * extraPositionX);
+			// }
 			
 			var sectorY;
-			if (frontBool == true) {
+			// if (frontBool == true) {
 				sectorY = FlxRandom.intRanged(0,1);
-			}  
-			else {
-				sectorY = FlxRandom.intRanged(0,2);
-			}
+			// }  
+			// else {
+			// 	sectorY = FlxRandom.intRanged(0,2);
+			// }
 
 			if (sectorY == 0) {
 				currentPrey.y = Reg.sharkLeader.y - screenSharkLeader.y - 10 - RANGE_SPAWNING * randomPositionY;
@@ -62,14 +62,19 @@ class PreyManager extends FlxTypedGroup<Prey>
 			else if (sectorX == 1) {
 				currentPrey.y = Reg.sharkLeader.y + (FlxG.camera.height - screenSharkLeader.y) + 10 + RANGE_SPAWNING * randomPositionY;
 			}
-			else {
-				var extraPositionY = FlxRandom.floatRanged(-1, 1);
-				currentPrey.y = Reg.sharkLeader.y + (FlxG.camera.width * extraPositionY);
-			}
+			// else {
+			// 	var extraPositionY = FlxRandom.floatRanged(-1, 1);
+			// 	currentPrey.y = Reg.sharkLeader.y + (FlxG.camera.width * extraPositionY);
+			// }
 
 			//FlxG.log.add("Position of Spawned Prey x = "+currentPrey.x+" y = "+currentPrey.y);
 			currentPrey.exists = true;
 			currentPrey.alive = true;
+
+			if (FlxG.overlap(currentPrey, this) == true) {
+				currentPrey.exists = false;
+				currentPrey.alive = false;
+			}
 		}
 	}
 }

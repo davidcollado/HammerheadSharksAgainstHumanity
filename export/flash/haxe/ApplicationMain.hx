@@ -17,14 +17,14 @@ class ApplicationMain {
 	
 	private static var complete:Bool;
 	private static var loaderInfo:LoaderInfo;
-	private static var preloader:flixel.system.FlxPreloader;
+	private static var preloader:NMEPreloader;
 	
 	
 	public static function main () {
 		
 		
 		
-		//nme.Lib.setPackage("HaxeFlixel", "LudumDare29", "com.example.myapp", "0.0.1");
+		//nme.Lib.setPackage("@davidcollado", "LudumDare29", "com.example.myapp", "0.0.1");
 		
 		loaderInfo = flash.Lib.current.loaderInfo;
 		
@@ -41,7 +41,7 @@ class ApplicationMain {
 		
 		//if (loaderInfo.bytesLoaded < loaderInfo.bytesTotal || loaderInfo.bytesLoaded <= 0) {
 			
-			preloader = new flixel.system.FlxPreloader ();
+			preloader = new NMEPreloader ();
 			Lib.current.addChild (preloader);
 			
 			preloader.onInit ();

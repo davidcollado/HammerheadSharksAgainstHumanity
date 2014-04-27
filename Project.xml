@@ -2,10 +2,10 @@
 <project>
 	<!------------------------------APPLICATION SETTINGS---------------------------->
 	
-	<app title="LudumDare29" file="LudumDare29" main="Main" version="0.0.1" company="HaxeFlixel" />
+	<app title="LudumDare29" file="LudumDare29" main="Main" version="0.0.1" company="@davidcollado" />
 	
 	<!--The flixel preloader is not accurate in Chrome. You can use it regularly if you embed the swf into a html file, or you can set the actual size of your file manually at "Flxpreloader-onUpdate-bytesTotal"!-->
-	<app preloader="flixel.system.FlxPreloader" />
+	<!--<app preloader="flixel.system.FlxPreloader" />-->
 	
 	<!--The swf version should be at least 11.2 without FLX_NO_MOUSE_ADVANCED -->
 	<set name="SWF_VERSION" value="11.2" />
@@ -13,10 +13,10 @@
 	<!--------------------------------WINDOW SETTINGS------------------------------->
 	
 	<!--These window settings apply to all targets-->
-	<window width="960" height="480" fps="60" background="#000000" hardware="true" vsync="true" />
+	<window width="960" height="480" fps="60" background="#084c9e" hardware="true" vsync="true" />
 	
 	<!--Web-specific-->
-	<window if="web"		orientation="portrait"  />
+	<window if="web" orientation="landscape" fullscreen="false" resizable="true" />
 	
 	<!--Desktop-specific-->
 	<window if="desktop"	orientation="landscape" fullscreen="false" resizable="true" />

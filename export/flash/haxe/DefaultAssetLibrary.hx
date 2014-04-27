@@ -124,6 +124,18 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/images-go-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
 		className.set ("assets/images/rock.png", __ASSET__assets_images_rock_png);
 		type.set ("assets/images/rock.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		className.set ("assets/images/simple_ship.png", __ASSET__assets_images_simple_ship_png);
+		type.set ("assets/images/simple_ship.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		className.set ("assets/images/simple_ship_1.png", __ASSET__assets_images_simple_ship_1_png);
+		type.set ("assets/images/simple_ship_1.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		className.set ("assets/images/simple_ship_2.png", __ASSET__assets_images_simple_ship_2_png);
+		type.set ("assets/images/simple_ship_2.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		className.set ("assets/images/simple_ship_3.png", __ASSET__assets_images_simple_ship_3_png);
+		type.set ("assets/images/simple_ship_3.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		className.set ("assets/images/smoke.png", __ASSET__assets_images_smoke_png);
+		type.set ("assets/images/smoke.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		className.set ("assets/images/splash.png", __ASSET__assets_images_splash_png);
+		type.set ("assets/images/splash.png", Reflect.field (AssetType, "image".toUpperCase ()));
 		className.set ("assets/images/Untitled.png", __ASSET__assets_images_untitled_png);
 		type.set ("assets/images/Untitled.png", Reflect.field (AssetType, "image".toUpperCase ()));
 		className.set ("assets/images/wave_big_spritesheet.png", __ASSET__assets_images_wave_big_spritesheet_png);
@@ -228,6 +240,12 @@ class DefaultAssetLibrary extends AssetLibrary {
 		addExternal("assets/images/hammershark_small_leader_spritesheet.pxa/CelData.plist", "text", "assets/images/hammershark_small_leader_spritesheet.pxa/CelData.plist");
 		addExternal("assets/images/images-go-here.txt", "text", "assets/images/images-go-here.txt");
 		addExternal("assets/images/rock.png", "image", "assets/images/rock.png");
+		addExternal("assets/images/simple_ship.png", "image", "assets/images/simple_ship.png");
+		addExternal("assets/images/simple_ship_1.png", "image", "assets/images/simple_ship_1.png");
+		addExternal("assets/images/simple_ship_2.png", "image", "assets/images/simple_ship_2.png");
+		addExternal("assets/images/simple_ship_3.png", "image", "assets/images/simple_ship_3.png");
+		addExternal("assets/images/smoke.png", "image", "assets/images/smoke.png");
+		addExternal("assets/images/splash.png", "image", "assets/images/splash.png");
 		addExternal("assets/images/Untitled.png", "image", "assets/images/Untitled.png");
 		addExternal("assets/images/wave_big_spritesheet.png", "image", "assets/images/wave_big_spritesheet.png");
 		addExternal("assets/images/wave_big_spritesheet.pxa/0.pxi", "binary", "assets/images/wave_big_spritesheet.pxa/0.pxi");
@@ -395,6 +413,24 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("assets/images/rock.png", __ASSET__assets_images_rock_png);
 		type.set ("assets/images/rock.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		
+		className.set ("assets/images/simple_ship.png", __ASSET__assets_images_simple_ship_png);
+		type.set ("assets/images/simple_ship.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		
+		className.set ("assets/images/simple_ship_1.png", __ASSET__assets_images_simple_ship_1_png);
+		type.set ("assets/images/simple_ship_1.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		
+		className.set ("assets/images/simple_ship_2.png", __ASSET__assets_images_simple_ship_2_png);
+		type.set ("assets/images/simple_ship_2.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		
+		className.set ("assets/images/simple_ship_3.png", __ASSET__assets_images_simple_ship_3_png);
+		type.set ("assets/images/simple_ship_3.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		
+		className.set ("assets/images/smoke.png", __ASSET__assets_images_smoke_png);
+		type.set ("assets/images/smoke.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		
+		className.set ("assets/images/splash.png", __ASSET__assets_images_splash_png);
+		type.set ("assets/images/splash.png", Reflect.field (AssetType, "image".toUpperCase ()));
 		
 		className.set ("assets/images/Untitled.png", __ASSET__assets_images_untitled_png);
 		type.set ("assets/images/Untitled.png", Reflect.field (AssetType, "image".toUpperCase ()));
@@ -1106,6 +1142,12 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:keep class __ASSET__assets_images_hammershark_small_leader_spritesheet_pxa_celdata_plist extends flash.utils.ByteArray { }
 @:keep class __ASSET__assets_images_images_go_here_txt extends flash.utils.ByteArray { }
 @:keep class __ASSET__assets_images_rock_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_simple_ship_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_simple_ship_1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_simple_ship_2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_simple_ship_3_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_smoke_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_splash_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep class __ASSET__assets_images_untitled_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep class __ASSET__assets_images_wave_big_spritesheet_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep class __ASSET__assets_images_wave_big_spritesheet_pxa_0_pxi extends flash.utils.ByteArray { }
@@ -1137,6 +1179,12 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 #elseif html5
+
+
+
+
+
+
 
 
 
@@ -1259,6 +1307,12 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:file("assets/images/hammershark_small_leader_spritesheet.pxa/CelData.plist") class __ASSET__assets_images_hammershark_small_leader_spritesheet_pxa_celdata_plist extends flash.utils.ByteArray {}
 @:file("assets/images/images-go-here.txt") class __ASSET__assets_images_images_go_here_txt extends flash.utils.ByteArray {}
 @:bitmap("assets/images/rock.png") class __ASSET__assets_images_rock_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/simple_ship.png") class __ASSET__assets_images_simple_ship_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/simple_ship_1.png") class __ASSET__assets_images_simple_ship_1_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/simple_ship_2.png") class __ASSET__assets_images_simple_ship_2_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/simple_ship_3.png") class __ASSET__assets_images_simple_ship_3_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/smoke.png") class __ASSET__assets_images_smoke_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/splash.png") class __ASSET__assets_images_splash_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/Untitled.png") class __ASSET__assets_images_untitled_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/wave_big_spritesheet.png") class __ASSET__assets_images_wave_big_spritesheet_png extends flash.display.BitmapData {}
 @:file("assets/images/wave_big_spritesheet.pxa/0.pxi") class __ASSET__assets_images_wave_big_spritesheet_pxa_0_pxi extends flash.utils.ByteArray {}
