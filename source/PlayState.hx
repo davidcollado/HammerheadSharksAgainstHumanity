@@ -480,6 +480,7 @@ class PlayState extends FlxState
 
 	public function addEndGameInactiveMenu():Void
 	{
+		FlxG.sound.play("menuTransitionEffect", 1);
 		_startText1 = new FlxText(FlxG.width/2 - 400, FlxG.height/3 - 150, 800);
 		_startText1.alignment = "center";
 		_startText1.size = 40;
@@ -488,11 +489,11 @@ class PlayState extends FlxState
 		_startText1.setBorderStyle(FlxText.BORDER_SHADOW);
 		_startText1.scrollFactor.set(0, 0);
 		add(_startText1);
-		_startText3 = new FlxText(FlxG.width/2 - 400, FlxG.height/2 - 50, 800);
+		_startText3 = new FlxText(FlxG.width/2 - 400, FlxG.height/2 - 85, 800);
 		_startText3.alignment = "center";
 		_startText3.size = 27;
 		_startText3.color =  FlxColor.RED;
-		_startText3.text = "Your are NOT helping the HAMMERHEADK SHARKS";
+		_startText3.text = "Your are NOT helping\nthe HAMMERHEAD SHARKS";
 		_startText3.setBorderStyle(FlxText.BORDER_SHADOW);
 		_startText3.scrollFactor.set(0, 0);
 		add(_startText3);
@@ -500,7 +501,7 @@ class PlayState extends FlxState
 		_startText2.alignment = "center";
 		_startText2.size = 35;
 		_startText2.color =  FlxColor.WHITE;
-		_startText2.text = "When you are ready, go find the HAMMERHEAD SHARKS ... \nBENEATH THE SURFACE";
+		_startText2.text = "When you are ready,\ngo find the HAMMERHEAD SHARKS ... \nBENEATH THE SURFACE";
 		_startText2.setBorderStyle(FlxText.BORDER_SHADOW);
 		_startText2.scrollFactor.set(0, 0);
 		add(_startText2);
@@ -522,6 +523,11 @@ class PlayState extends FlxState
 		addInstructionsMenu();
 	}
 
+	private function fadeOutAndInactiveEnd(TweenInstance: FlxTween):Void
+	{
+		addEndGameInactiveMenu();
+	}
+
 	public function freeSharksEndGame():Void
 	{
 		if (Reg.gameStateVar == 2) {
@@ -537,15 +543,32 @@ class PlayState extends FlxState
 			addEndGameFreeSharksMenu();
 		}
 		else if (Reg.gameStateVar < 2){
-			// Change Game State
-			Reg.gameStateVar = 3;
-
-			_timerText.visible = false;
-			_scoreLabelText.visible = false;
-			Reg.scoreValueText.visible = false;
+			if (_timerText != null) {
+				_timerText.visible = false;
+			}
+			if (_scoreLabelText != null) {
+				_scoreLabelText.visible = false;
+			}
+			if (Reg.scoreValueText != null) {
+				Reg.scoreValueText.visible = false;
+			}
 
 			FlxG.log.add("inactiveEndGame");
-			addEndGameInactiveMenu();
+			if (Reg.gameStateVar == 0) {
+				// Change Game State
+				Reg.gameStateVar = 3;
+				Reg.score = 0;
+				FlxSpriteUtil.fadeOut(_startText1, 0.1);
+				FlxSpriteUtil.fadeOut(_startText2, 0.1);
+				FlxSpriteUtil.fadeOut(_pressStartText, 0.1, fadeOutAndInactiveEnd);
+			}
+			else if (Reg.gameStateVar == 1) {
+				// Change Game State
+				Reg.gameStateVar = 3;
+				FlxSpriteUtil.fadeOut(_startText2, 0.1);
+				FlxSpriteUtil.fadeOut(_startText3, 0.1);
+				FlxSpriteUtil.fadeOut(_pressStartText, 0.1, fadeOutAndInactiveEnd);
+			}
 		}
 	}
 
